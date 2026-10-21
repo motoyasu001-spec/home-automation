@@ -2,6 +2,8 @@ name: Send LINE Notification
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [line_trigger]
 
 jobs:
   send-message:
